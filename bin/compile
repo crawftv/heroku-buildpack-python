@@ -309,7 +309,8 @@ mtime "sqlite3.install.time" "${start}"
 # Install dependencies with pip (where the magic happens).
 (( start=$(nowms) ))
 # shellcheck source=bin/steps/pip-install
-source "$BIN_DIR/steps/pip-install"
+#source "$BIN_DIR/steps/pip-install"
+source "$BIN_DIR/steps/custom-install"
 mtime "pip.install.time" "${start}"
 
 # Support for NLTK corpora.
